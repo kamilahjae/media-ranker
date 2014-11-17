@@ -1,0 +1,8 @@
+<h1>Edit <%= @movie.name %></h1>
+
+<%= bootstrap_form_for(@movie, url: {action: "edit"}, html: {method: "patch"}) do |f| %>
+<%= f.text_field :name  %>
+<%= f.text_field :director %>
+<%= f.text_field :description %>
+<%= f.submit %>
+<% end %>

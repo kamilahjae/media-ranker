@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MediaRankerTwo</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="page-header">
+        <%= image_tag "cropped-bunny.jpg"%></div>
+        <h1>
+            <a href="/">Media Ranker</a>
+            <small>Ranking the Best of Everything</small>
+          </div>
+
+        </h1>
+      </div><!-- end of header -->
+
+    </div><!-- end of row -->
+    <div class="row">
+      <div class="col-lg-11 col-med-11" "col-sm-12" "col-xs-12">
+        <%= yield %>
+      </div><!-- end of col -->
+    </div class="row">
+  </div><!-- end of container -->
+</body>
+</html>

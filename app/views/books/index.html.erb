@@ -1,0 +1,22 @@
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+          <th> Ranking </th>
+          <th> Name    </th>
+          <th> Upvote  </th>
+        </tr><!--end of tr -->
+
+        <tr>
+          <% @books.each do |book| %>
+          <td>Rank</td>
+          <td>
+            <%= link_to(book.name, book_path(book)) %>
+          </td>
+          <td>Upvote</td>
+        </tr>
+          <% end %>
+
+      </tbody><!-- end of tbady -->
+    </table><!-- end of table table-hover -->
+    <a class="btn btn-default" href="/">View All Media</a>
+    <a class="btn btn-default" href="books/new">Add a Book</a>

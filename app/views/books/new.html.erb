@@ -1,0 +1,8 @@
+<h1>New Book</h1>
+
+<%= bootstrap_form_for @book, url: {action: "create"} do |f| %>
+<%= f.text_field :name %>
+<%= f.text_field :author %>
+<%= f.text_field :description %>
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,24 @@
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+          <th> Ranking </th>
+          <th> Name    </th>
+          <th> Upvote  </th>
+        </tr><!--end of tr -->
+
+        <tr>
+          <% @movies.each do |movie| %>
+          <td>Rank</td>
+          <td>
+            <%= link_to(movie.name, movie_path(movie)) %>
+          </td>
+          <td>Upvote</td>
+        </tr>
+          <% end %>
+
+      </tbody><!-- end of tbady -->
+    </table><!-- end of table table-hover -->
+    <a class="btn btn-default" href="/">View All Media</a>
+    <a class="btn btn-default" href="movies/new">Add a Movie</a>
+  </div><!-- end of col-lg-12 -->
+</div><!-- end of row -->

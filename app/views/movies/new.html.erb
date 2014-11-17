@@ -1,0 +1,8 @@
+<h1>New Movie</h1>
+
+<%= bootstrap_form_for(@movie, url: {action: "create"}) do |field| %>
+<%= field.text_field :name %><br />
+<%= field.text_field :director %><br />
+<%= field.text_field :description %><br />
+<%= field.submit %>
+<% end %>
